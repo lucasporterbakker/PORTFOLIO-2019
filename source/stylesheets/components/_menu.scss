@@ -12,10 +12,6 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 }
 
-a {
-	text-decoration: none;
-}
-
 .site-content{
 	max-width: 1100px;
 	height: 100vh;
@@ -63,7 +59,7 @@ a {
 .nav{
 	$width: 100vw;
 	$height: 100vh;
-	$font--size--calc: calc(2vw + 10px);
+	$font--size--calc: calc(2vw + 5px);
 	$transition--easing: cubic-bezier(.77,0,.175,1);
 	position: fixed;
 	z-index:1;
@@ -102,6 +98,13 @@ a {
 		transform: translate(0%, 100%);
 		transition: opacity .2s ease, transform .3s ease;
 		margin-right: 25px;
+		a{
+			text-decoration: none;
+			// font-family: inherit;
+			color: $mango;
+			font-size: lighter;
+			font-weight: 100;
+		}
 		&:before{
 			content: "";
 			position: absolute;
