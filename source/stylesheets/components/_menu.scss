@@ -23,7 +23,7 @@ body{
 	&__headline{
 		font-weight: 300;
 		color: $font--color;
-		font-size: calc(2vw + 12px);
+		font-size: calc(2vw + 14px);
 	}
 }
 
@@ -92,13 +92,29 @@ body{
 	}
 	&__list-item{
 		position: relative;
-		font-size: 125%;
-		display: inline-block;
+		padding-bottom: 10px;
+		padding-top: 15px;
+		text-align: left;
+		display: grid;
 		transition-delay: $transition--length + s;
 		opacity: 0;
 		transform: translate(0%, 100%);
 		transition: opacity .2s ease, transform .3s ease;
-		margin-right: 55px;
+		margin-left: 10px;
+		font-size: 100%;
+		@include mq-xs {
+      font-size: 150% !important;
+    }
+    @include mq-sm {
+      font-size: 150% !important;
+    }
+    @include mq-md {
+      font-size: 125% !important;
+    }
+    @include mq-lg {
+      font-size: 100% !important;
+    }
+
 		a{
 			text-decoration: none;
 			// font-family: inherit;
@@ -119,7 +135,7 @@ body{
 		}
 		&:hover{
 			&:before{
-				width: 100%;
+				width: 20%;
 			}
 		}
 	}

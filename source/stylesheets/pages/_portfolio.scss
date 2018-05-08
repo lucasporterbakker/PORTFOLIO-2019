@@ -25,7 +25,7 @@
 $background: #FFFFFF;
 $box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
 $border: 1px solid rgba(191, 191, 191, 0.4);
-$items: 2;
+$items: 4;
 $rows: ceil($items/2);
 
 /* Card sizing */
@@ -41,10 +41,12 @@ $marker-size: 9px;
 /* Colors */
 
 $steps: #46b8e9;
-$portfolio-colors: #1C1C1C,
-#1C1C1C;
+$colors: #2CB9C5,
+#17374E,
+#D84946,
+#4DB7B0;
 
-$timeline: #1C1C1C;
+$portfolio-timeline: #1C1C1C;
 
 /* Calculations */
 
@@ -70,7 +72,7 @@ $marker-dist: $card-width + $outer-margin/2 - $marker-size/2;
     content: "";
     width: $marker-size;
     height: $marker-size;
-    background-color: $timeline;
+    background-color: $portfolio-timeline;
     border-radius: $marker-size;
     box-shadow: 0px 0px 2px 8px $background;
   }
@@ -106,7 +108,21 @@ body {
   h1 {
     text-align: center;
     font-size: 3rem;
-    font-weight: 200;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  h5 {
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  h6 {
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 1.7rem;
+    font-weight: 300;
     margin-bottom: 20px;
   }
   p.portfolio-leader {
@@ -116,7 +132,7 @@ body {
     margin: auto;
     margin-bottom: 45px;
   }
-  .portfolio-demo-card-wrapper {
+  .demo-card-wrapper {
     position: relative;
     margin: auto;
     @include mq-lg {
@@ -135,11 +151,11 @@ body {
       left: 50%;
       border-left: $border;
       @include mq-lg {
-        border-left: 1px solid $timeline;
+        border-left: 1px solid $portfolio-timeline;
       }
     }
     }
-    .portfolio-demo-card {
+    .demo-card {
     position: relative;
     display: block;
     margin: 10px auto 80px;
@@ -253,7 +269,7 @@ body {
     }
     @for $i from 1 through $items {
       &--step#{$i} {
-        $color: nth($portfolio-colors, ((($i - 1) % 1) + 1));
+        $color: nth($colors, ((($i - 1) % 4) + 1));
         background-color: $color;
         .portfolio-head::after {
           border-color: $color;
