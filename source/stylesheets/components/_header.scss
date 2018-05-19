@@ -1,0 +1,141 @@
+$font--primary:'Fira Sans', sans-serif;
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  .clear{
+    clear: both;
+  }
+
+
+  .slide-toggle{
+    display: none;
+  }
+
+  .slidemenu{
+    font-family: arial, sans-serif;
+    max-width: 600px;
+    margin: 50px auto;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    overflow: hidden;
+    color: $mango;
+  }
+
+  .slidemenu label{
+    width: 25%;
+    text-align: center;
+    display: block;
+    float: left;
+    color: $mango;
+    margin: 0 auto;
+    opacity: 0.2;
+    font-weight: lighter;
+    font-family: 'Fira Sans', sans-serif;
+    a{
+      text-decoration: none;
+      color: $mango;
+    }
+  }
+
+
+  .slidemenu label:hover{
+    cursor: pointer;
+    color: #666;
+  }
+
+  .slidemenu label span{
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    a{
+      text-decoration: none;
+      color: $mango;
+    }
+  }
+
+  .slidemenu label .icon{
+    font-size: 18px;
+    border: solid 2px $mango;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    line-height: 50px;
+    border-radius: 50%;
+    a{
+      text-decoration: none;
+      color: $mango;
+    }
+  }
+
+  /*Bar Style*/
+
+  .slider{
+    width: 100%;
+    height: 1px;
+    display: block;
+    margin: auto;
+    background: #FFFFFF;
+    margin-top: 10px;
+    border-radius: 5px;
+    opacity: .9;
+  }
+
+  .slider .bar{
+    width: 25%;
+    margin: auto;
+    height: 2px;
+    background: #141C35;
+    border-radius: 5px;
+  }
+
+  /*Animations*/
+  .slidemenu label, .slider .bar {
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+  }
+
+  /*Toggle*/
+
+  .slidemenu .slide-toggle:checked + label{
+    opacity: 1;
+  }
+
+  .footer-slidemenu{
+    font-family: arial, sans-serif;
+    max-width: 600px;
+    margin: 50px auto;
+    align-content: center;
+    text-align: center;
+    overflow: hidden;
+    color: $mango;
+  }
+
+  .footer-slidemenu label .icon{
+    font-size: 18px;
+    border: solid 1px $mango;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    line-height: 50px;
+    border-radius: 50%;
+    a{
+      text-decoration: none;
+      color: $mango;
+    }
+  }
+
+
+
+  .slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
+  .slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
+  .slidemenu #slide-item-3:checked ~ .slider .bar{ margin-left: 50%; }
+  .slidemenu #slide-item-4:checked ~ .slider .bar{ margin-left: 75%; }
