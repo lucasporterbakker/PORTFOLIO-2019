@@ -73,6 +73,10 @@
       margin:0px 30px;
       width:380px;
       height:600px;
+      @media (max-width:767px){
+        width:85%;
+        height:85%;
+      }
       position:relative;
       border-radius:6px;
       overflow:hidden;
@@ -344,9 +348,9 @@
 
 @media (max-width:767px){
   .westgroup-blurb {
-    margin-left: 50px;
-    margin-right: 50px;
-    font-size: 50% ; 
+    margin-left: 45px;
+    margin-right: 45px;
+    font-size: 50% ;
     h6 {
     }
     text-align: justify;
