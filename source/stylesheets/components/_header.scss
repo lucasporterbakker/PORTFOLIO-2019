@@ -133,7 +133,9 @@ $font--primary:'Fira Sans', sans-serif;
     }
   }
 
-
+  .back-button {
+    padding-right: 25px;
+  }
 
   .slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
   .slidemenu #slide-item-2:checked ~ .slider .bar{ margin-left: 25%; }
