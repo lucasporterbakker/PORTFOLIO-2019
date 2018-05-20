@@ -100,7 +100,7 @@ body{
 		opacity: 0;
 		transform: translate(0%, 100%);
 		transition: opacity .2s ease, transform .3s ease;
-		margin-left: 10px;
+		margin-left: 50px;
 		font-size: 100%;
 		@include mq-xs {
       font-size: 150% !important;
@@ -121,6 +121,14 @@ body{
 			color: $mango;
 			font-size: lighter;
 			font-weight: 100;
+			i {
+				color: $mango;
+				padding-right: 10px;
+				padding-bottom: 10px;
+				font-size: 22px;
+				// text-align: center;
+				// align-content: center;
+			}
 		}
 		&:before{
 			content: "";
@@ -128,14 +136,14 @@ body{
 			background: $font--color--active;
 			width: 20px;
 			height: 1px;
-			top: 100%;
+			top: 80%;
 			transform: translate(0%, 0%);
 			transition: all .3s ease;
 			z-index: -1;
 		}
 		&:hover{
 			&:before{
-				width: 20%;
+				width: 22%;
 			}
 		}
 	}
