@@ -17,6 +17,10 @@ $font--primary:'Fira Sans', sans-serif;
   .slidemenu{
     font-family: arial, sans-serif;
     max-width: 600px;
+    @media (max-width:500px){
+    margin-left: 25px;
+    margin-right: 25px;
+    }
     margin: 50px auto;
     justify-content: space-between;
     align-content: center;
@@ -51,6 +55,9 @@ $font--primary:'Fira Sans', sans-serif;
     display: block;
     padding: 10px;
     font-size: 14px;
+    @media (max-width:500px){
+    font-size: 70%;
+    }
     a{
       text-decoration: none;
       color: $mango;

@@ -171,6 +171,9 @@ body {
     margin: 10px auto 80px;
     max-width: 94%;
     z-index: 2;
+    @media (max-width:500px){
+    margin: 30px !important;
+    }
     @include mq-sm {
       max-width: 60%;
       box-shadow: $box-shadow;
