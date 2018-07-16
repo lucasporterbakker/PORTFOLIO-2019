@@ -187,6 +187,9 @@ $font--primary:'Fira Sans', sans-serif;
     a{
       text-decoration: none;
       color: $off-white;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      transition: all .5s;
     }
     a:hover {
       color: $mango;
