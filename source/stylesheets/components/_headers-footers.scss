@@ -1,5 +1,29 @@
 $font--primary:'Fira Sans', sans-serif;
 
+@mixin mq-xs {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin mq-sm {
+  @media (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin mq-md {
+  @media (min-width: 720px) {
+    @content;
+  }
+}
+
+@mixin mq-lg {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+
   *{
     margin: 0;
     padding: 0;
@@ -87,7 +111,7 @@ $font--primary:'Fira Sans', sans-serif;
     height: 1px;
     display: block;
     margin: auto;
-    background: #FFFFFF;
+    background: $off-white;
     margin-top: 10px;
     border-radius: 5px;
     opacity: .9;
@@ -140,8 +164,64 @@ $font--primary:'Fira Sans', sans-serif;
     }
   }
 
+  .social-footer-slidemenu{
+    font-family: arial, sans-serif;
+    max-width: 600px;
+    margin: 50px auto;
+    align-content: center;
+    text-align: center;
+    overflow: hidden;
+    color: $mango;
+  }
+
+  .social-footer-slidemenu label .icon{
+    font-size: 20px;
+    // border: solid 0.5px $off-white;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin: 0 auto;
+    line-height: 40px;
+    border-radius: 50%;
+    a{
+      text-decoration: none;
+      color: $off-white;
+    }
+    a:hover {
+      color: $mango;
+    }
+  }
+
+  .about-footer {
+    color: $off-white;
+    font-family: $font--primary;
+    font-size: 11px;
+    opacity: 0.8;
+    line-height: 25px;
+    padding: 30px;
+    // font-weight: lighter;
+  }
+
   .back-button {
     padding-right: 25px;
+  }
+
+  .bio-blurb {
+    padding: 0px 50px;
+    text-align: center;
+    ul {
+      text-align: justify;
+    }
+    li {
+      text-align: justify;
+    }
+    @mixin mq-xs {
+      padding: 0px 15px;
+    }
+    @mixin mq-sm {
+      padding: 0px 15px;
+    }
   }
 
   .slidemenu #slide-item-1:checked ~ .slider .bar{ margin-left: 0; }
