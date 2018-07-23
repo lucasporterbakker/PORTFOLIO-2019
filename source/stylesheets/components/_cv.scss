@@ -25,7 +25,7 @@
 $background: #FFFFFF;
 $box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
 $border: 1px solid rgba(191, 191, 191, 0.4);
-$items: 8;
+$items: 9;
 $rows: ceil($items/2);
 
 /* Card sizing */
@@ -45,6 +45,7 @@ $colors: #4DB7B0,
 #B2242F,
 #141C35,
 #26BEC9,
+#1C1B1B,
 #FDC157,
 #38428E,
 #DA1436,
@@ -258,10 +259,17 @@ body {
         display: block;
         width: 100%;
       }
+      a {
+        text-decoration: none;
+        color: #929292;
+      }
+      a:hover {
+        color: #424242;
+      }
     }
     @for $i from 1 through $items {
       &--step#{$i} {
-        $color: nth($colors, ((($i - 1) % 8) + 1));
+        $color: nth($colors, ((($i - 1) % 9) + 1));
         background-color: $color;
         .head::after {
           border-color: $color;
