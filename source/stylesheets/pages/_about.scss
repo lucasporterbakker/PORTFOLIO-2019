@@ -35,6 +35,7 @@
 .avatar {
   width: 50px;
   border-radius: 50%;
+  transform: rotate(-42deg)
 }
 .avatar-large {
   width: 100px;
@@ -59,8 +60,58 @@
 
 
 #logo-bar {
-  height: 100vh;
-  img {
-    width: 50px;
+  display: inline-block;
+  img{
+    max-width: 225px;
+    margin-left: auto;
+    padding: 50px;
+    text-align: center !important;
+    align-content: center !important;
+    align-items: center;
+    justify-content: center;
+    @media (max-width:767px){
+      max-width: 125px !important;
+      padding: 20px !important;
+    }
+  }
+  #tc{
+    max-width: 250px !important;
+    @media (max-width:767px){
+      max-width: 135px !important;
+      padding: 20px !important;
+      margin: auto;
+    }
+  }
+  #app-idea-awards {
+    max-width: 175px !important;
+    @media (max-width:767px){
+      max-width: 80px !important;
+      padding: 20px !important;
+      margin: auto;
+    }
+  }
+  #the-paper {
+    max-width: 160px !important;
+    @media (max-width:767px){
+      max-width: 85px !important;
+      padding: 20px !important;
+      margin: auto;
+    }
+  }
+  #global-times {
+    max-width: 160px !important;
+    @media (max-width:767px){
+      max-width: 125px !important;
+      padding: 20px !important;
+      margin: auto;
+    }
+  }
+  #thats-china-logo {
+    max-width: 200px !important;
+    @media (max-width:767px){
+      max-width: 90px !important;
+      padding: 20px !important;
+      margin: auto;
+    }
   }
 }
