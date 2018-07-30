@@ -74,22 +74,22 @@
       padding: 20px !important;
     }
   }
-  #tc{
-    max-width: 250px !important;
-    @media (max-width:767px){
-      max-width: 135px !important;
-      padding: 20px !important;
-      margin: auto;
-    }
-  }
-  #app-idea-awards {
-    max-width: 175px !important;
-    @media (max-width:767px){
-      max-width: 80px !important;
-      padding: 20px !important;
-      margin: auto;
-    }
-  }
+  // #tc{
+  //   max-width: 250px !important;
+  //   @media (max-width:767px){
+  //     max-width: 135px !important;
+  //     padding: 20px !important;
+  //     margin: auto;
+  //   }
+// }
+  // #app-idea-awards {
+  //   max-width: 175px !important;
+  //   @media (max-width:767px){
+  //     max-width: 80px !important;
+  //     padding: 20px !important;
+  //     margin: auto;
+  //   }
+  // }
   #the-paper {
     max-width: 160px !important;
     @media (max-width:767px){
@@ -106,6 +106,8 @@
       margin: auto;
     }
   }
+
+
   #thats-china-logo {
     max-width: 200px !important;
     @media (max-width:767px){
@@ -113,5 +115,42 @@
       padding: 20px !important;
       margin: auto;
     }
+  }
+}
+
+.logo-container {
+  margin: auto;
+  width: 60%; /* relative width */
+  /* width: 600px; */ /* Fixed width */
+  ul {
+    list-style-type: none;
+    margin-left: -3%;
+    overflow: hidden;
+
+  }
+
+  li {
+    width: 25%;
+    @media (max-width:767px){
+      width: 70% !important;
+      padding: 20px;
+      margin: auto !important;
+      float: none !important;
+    }
+    @media (max-width:1000px){
+      width: 50% !important;
+      padding: 25px;
+      margin: auto !important;
+      float: none !important;
+    }
+    float: left;
+    padding: 4%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  img {
+    max-width: 100%;
   }
 }
