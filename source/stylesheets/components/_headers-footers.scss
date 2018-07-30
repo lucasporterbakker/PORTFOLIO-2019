@@ -204,6 +204,11 @@ $font--primary:'Fira Sans', sans-serif;
     line-height: 25px;
     padding: 30px;
     // font-weight: lighter;
+    a{
+      color: $off-white;
+      text-decoration: none;
+      font-family: $font--primary;
+    }
   }
 
   .back-button {
