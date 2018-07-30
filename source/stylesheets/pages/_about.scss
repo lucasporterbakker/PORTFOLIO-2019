@@ -83,35 +83,35 @@
   //   }
 // }
   // #app-idea-awards {
-  //   max-width: 50% !important;
+  //   max-width: 30% !important;
   // }
 
-  #the-paper {
-    max-width: 160px !important;
-    @media (max-width:767px){
-      max-width: 85px !important;
-      padding: 20px !important;
-      margin: auto;
-    }
-  }
-  #global-times {
-    max-width: 160px !important;
-    @media (max-width:767px){
-      max-width: 125px !important;
-      padding: 20px !important;
-      margin: auto;
-    }
-  }
-
-
-  #thats-china-logo {
-    max-width: 200px !important;
-    @media (max-width:767px){
-      max-width: 90px !important;
-      padding: 20px !important;
-      margin: auto;
-    }
-  }
+  // #the-paper {
+  //   max-width: 50% !important;
+  //   @media (max-width:767px){
+  //     max-width: 85px !important;
+  //     padding: 20px !important;
+  //     margin: auto;
+  //   }
+  // }
+  // #global-times {
+  //   max-width: 160px !important;
+  //   @media (max-width:767px){
+  //     max-width: 125px !important;
+  //     padding: 20px !important;
+  //     margin: auto;
+  //   }
+  // }
+  //
+  //
+  // #thats-china-logo {
+  //   max-width: 200px !important;
+  //   @media (max-width:767px){
+  //     max-width: 90px !important;
+  //     padding: 20px !important;
+  //     margin: auto;
+  //   }
+  // }
 }
 
 .logo-container {
@@ -129,7 +129,7 @@
     width: 25%;
     @media (max-width:767px){
       width: 70% !important;
-      padding: 20px;
+      padding: 15px;
       margin: auto !important;
       float: none !important;
     }
@@ -149,4 +149,26 @@
   img {
     max-width: 100%;
   }
+
+  #height-shrink{
+    max-height: 45px !important;
+    margin-bottom: 15px;
+  }
+
+  #lc{
+    margin-top: 15px;
+    @media (max-width:767px){
+      margin-top: 0px !important;
+    }
+  }
+
+  #paper{
+    margin-left: 25px;
+    max-height: 45px !important;
+    @media (max-width:767px){
+      margin-left: 10px !important;
+      max-height: 30px !important;
+    }
+  }
+
 }
