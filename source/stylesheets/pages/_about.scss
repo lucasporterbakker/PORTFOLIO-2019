@@ -118,11 +118,14 @@
   margin: auto;
   width: 60%; /* relative width */
   /* width: 600px; */ /* Fixed width */
+  @media (max-width:767px){
+    // margin: auto !important;
+    width: 75%;
+  }
   ul {
     list-style-type: none;
-    margin-left: -3%;
+    // margin-left: -3%;
     overflow: hidden;
-
   }
 
   li {
@@ -167,11 +170,10 @@
 
   #paper{
     margin-left: 25px;
-    max-height: 45px !important;
+    max-height: 40px !important;
     @media (max-width:767px){
-      margin-left: 10px !important;
+      // margin-left: 10px !important;
       max-height: 30px !important;
     }
   }
-
 }
