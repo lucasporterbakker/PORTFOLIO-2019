@@ -74,44 +74,6 @@
       padding: 20px !important;
     }
   }
-  // #tc{
-  //   max-width: 250px !important;
-  //   @media (max-width:767px){
-  //     max-width: 135px !important;
-  //     padding: 20px !important;
-  //     margin: auto;
-  //   }
-// }
-  // #app-idea-awards {
-  //   max-width: 30% !important;
-  // }
-
-  // #the-paper {
-  //   max-width: 50% !important;
-  //   @media (max-width:767px){
-  //     max-width: 85px !important;
-  //     padding: 20px !important;
-  //     margin: auto;
-  //   }
-  // }
-  // #global-times {
-  //   max-width: 160px !important;
-  //   @media (max-width:767px){
-  //     max-width: 125px !important;
-  //     padding: 20px !important;
-  //     margin: auto;
-  //   }
-  // }
-  //
-  //
-  // #thats-china-logo {
-  //   max-width: 200px !important;
-  //   @media (max-width:767px){
-  //     max-width: 90px !important;
-  //     padding: 20px !important;
-  //     margin: auto;
-  //   }
-  // }
 }
 
 .logo-container {
@@ -172,8 +134,14 @@
     margin-left: 25px;
     max-height: 40px !important;
     @media (max-width:767px){
-      // margin-left: 10px !important;
+      // margin-left: 95% !important;
       max-height: 30px !important;
     }
   }
+  // #tc{
+  //   max-width: 250px !important;
+  //   @media (max-width:767px){
+  //     max-width: 135px !important;
+  //   }
+  // }
 }
